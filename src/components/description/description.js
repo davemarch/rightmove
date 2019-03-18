@@ -5,13 +5,14 @@ import './description.css';
 
 
 const Description = (props) => {
+  console.log("desc" + props)
         return (
           <div className="description">
           <p>{props.heading}</p>
           <p>{props.location}</p>
           <p>{props.description}</p>
           <p>{props.added}</p>
-          <Contact />
+          <Contact info = {props.info}/>
           </div>
         );
       }
